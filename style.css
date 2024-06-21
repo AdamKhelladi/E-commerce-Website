@@ -1,0 +1,30 @@
+/* Start Global R.linkses  */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+}
+
+.container {
+  /* background-color: red; */
+  max-width: 1100px;
+  padding: 20px 35px;
+  margin: auto;
+}
+
+:root {
+  --main-color: #068bf7;
+  --hover-color: #006ed4;
+  --main-transition: .3s;
+  --border-radius: 6px;
+}
+
+::selection {
+  background-color: white; /* Orange background */
+  color: black; /* White text color */
+}
+/* End Global Rules  */
