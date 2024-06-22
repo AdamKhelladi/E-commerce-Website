@@ -1,24 +1,26 @@
 /* Start Global R.linkses  */
+body {
+  font-family: "Lato", sans-serif;
+  height: 5000px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  caret-color: var(--blue-color);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: black;
-  font-family: "Open Sans", sans-serif;
-  /* font-family: 'IBM Plex Sans', sans-serif; */
-}
-
-.container {
-  /* background-color: red; */
-  max-width: 1100px;
-  padding: 20px 35px;
-  margin: auto;
-}
-
 :root {
-  --main-color: #068bf7;
-  --hover-color: #006ed4;
+  --main-color: #00e4a0;
+  --hover-color: #00c98c;
   --main-transition: .3s;
   --border-radius: 6px;
 }
@@ -27,4 +29,117 @@ body {
   background-color: white; /* Orange background */
   color: black; /* White text color */
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: #333;
+  box-shadow: 0 0 10px #555 inset;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color);
+}
+
+/* .container {
+  max-width: 1100px;
+  padding: 20px 35px;
+  margin: auto;
+} */
 /* End Global Rules  */
+
+/* Start Header */
+nav {
+  background-color: #111;
+  padding: 0 50px;
+  color: white;
+}
+
+nav .navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+
+nav .navTop .search {
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: var(--main-transition);
+}
+
+nav .navTop .search input {
+  height: 100%;
+  width: 230px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: #444;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  transition: .7s;
+}
+nav .navTop .search input::placeholder {
+  color: #ccc;
+}
+
+nav .navTop .search input:focus {
+  width: 270px;
+}
+
+nav .navTop .search input:focus + .search {
+  box-shadow: 0 0 10px white;
+}
+
+nav .navTop .search img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+nav .navTop .limitedOffer {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 3px solid var(--main-color);
+}
+
+nav .navBottom {
+  height: 60px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .navBottom h3 {
+  padding: 8px 12px;
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+nav .navBottom h3:hover {
+  color: white;
+  background-color: #444;
+  border-radius: 10px;
+}
+/* End Header */
