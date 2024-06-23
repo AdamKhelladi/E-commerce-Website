@@ -20,6 +20,7 @@ html {
 :root {
   --main-color: #31995c;
   --hover-color: #267948;
+  --background-sections: #dfffee;
   --main-transition: .3s;
   --border-radius: 6px;
 }
@@ -324,3 +325,115 @@ nav .navBottom h3:hover {
   }
 }
 /* End Features */
+
+/* Start Product */
+.product {
+  height: 100vh;
+  padding: 80px 40px;
+  position: relative;
+  background-color: var(--background-sections);
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.product img {
+  width: 40%;
+  animation: product-up-down 2s ease-in-out infinite;
+}
+@keyframes product-up-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.product img:hover {
+  animation: none;
+}
+
+.product .productInfo {
+  position: absolute;
+  top: 10%;
+  right: 7%;
+  width: 40%;
+  padding: 40px;
+}
+
+.product .productInfo h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.product .productInfo h2 {
+  margin-bottom: 20px;
+}
+
+.product .productInfo p {
+  max-width: 800px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product .productInfo .colors,
+  .product .productInfo .sizes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product .productInfo .colors .color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.product .productInfo .colors .color:last-child {
+  background-color: darkblue;
+}
+
+.product .productInfo .sizes .size {
+  padding: 5px 20px;
+  border: 1px solid black;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--main-transition);
+  user-select: none;
+}
+
+.product .productInfo .sizes .size:hover {
+  background-color: black;
+  color: white;
+}
+
+.product .productInfo button {
+  float: right;
+  border: none;
+  background-color: black;
+  border: 1px solid #999;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: var(--main-transition);
+  animation: buy 1s ease-in-out infinite;
+}
+
+.product .productInfo button:hover {
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  animation: none;
+}
+
+/* End Product */
