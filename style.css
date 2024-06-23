@@ -18,8 +18,8 @@ html {
 }
 
 :root {
-  --main-color: #00c98c;
-  --hover-color: #00b47e;
+  --main-color: #31995c;
+  --hover-color: #267948;
   --main-transition: .3s;
   --border-radius: 6px;
 }
@@ -286,12 +286,16 @@ nav .navBottom h3:hover {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 100px;
+  gap: 30px;
+  max-width: 1100px;
+  padding: 80px 30px;
+  margin: auto;
 }
 
 .features .feature {
-  text-align: center;
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features .feature .title {
@@ -301,13 +305,22 @@ nav .navBottom h3:hover {
 }
 
 .features .feature p {
-  max-width: 170px;
+  width: 140px;
+  text-align: center;
   color: #333;
   font-size: 16px;
 }
 
 .features .feature img {
-  width: 90px;
+  width: 70px;
 }
 
+@media (max-width: 676px) {
+  .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
 /* End Features */
