@@ -3,6 +3,8 @@
 const headerItems = document.querySelectorAll(".navBottom h3");
 const wrapper = document.querySelector(".sliderWrapper");
 
+const sliderItems = document.querySelectorAll(".sliderItem");
+
 headerItems.forEach((item, index) => {
   item.addEventListener("click", (event) => {
     removeActiveClasses(headerItems);
@@ -13,6 +15,21 @@ headerItems.forEach((item, index) => {
     selectedProduct(index);
   });
 });
+
+buyNowBtn();
+function buyNowBtn() {
+  sliderItems.forEach((sliderItem) => {
+    const btn = sliderItem.querySelector("button");
+  
+    if (btn) {
+      btn.addEventListener("click", (event) => {
+        document.querySelector(".product").scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    }
+  });
+}
 
 // Product
 
@@ -118,7 +135,6 @@ const productColors = document.querySelectorAll(".productInfo .colors .color");
 let choosenProduct = products[0];
 
 function selectedProduct(index) {
-  console.log(index);
   choosenProduct = products[index];
 
   productImg.src = choosenProduct.colors[0].img;
