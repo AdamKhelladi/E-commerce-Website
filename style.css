@@ -410,6 +410,11 @@ nav .navBottom h3:hover {
   user-select: none;
 }
 
+.product .productInfo .sizes .size.active {
+  background-color: black;
+  color: white;
+}
+
 .product .productInfo .sizes .size:hover {
   background-color: black;
   color: white;
@@ -427,6 +432,7 @@ nav .navBottom h3:hover {
   cursor: pointer;
   transition: var(--main-transition);
   animation: buy 1s ease-in-out infinite;
+  user-select: none;
 }
 
 .product .productInfo button:hover {
