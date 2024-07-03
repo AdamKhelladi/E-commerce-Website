@@ -177,14 +177,12 @@ productSection.addEventListener("click", (event) => {
     paymentBox.classList.add("show");
     overlay.classList.add("show");
     productSection.style.clipPath = "none";
-    document.body.classList.add("no-scroll");
 
   } else if (event.target.classList.contains("fa-xmark")) {
     paymentBox.classList.remove("show");
     overlay.classList.remove("show");
     productSection.style.clipPath =
       "polygon(0 15%, 100% 0%, 100% 100%, 0% 100%)";
-    document.body.classList.remove("no-scroll");
   }
 });
 
