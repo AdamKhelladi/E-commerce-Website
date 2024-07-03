@@ -20,7 +20,7 @@ buyNowBtn();
 function buyNowBtn() {
   sliderItems.forEach((sliderItem) => {
     const btn = sliderItem.querySelector("button");
-  
+
     if (btn) {
       btn.addEventListener("click", (event) => {
         document.querySelector(".product").scrollIntoView({
@@ -165,6 +165,28 @@ function changingSize() {
     });
   });
 }
+
+// Payment Box
+
+const paymentBox = document.querySelector(".payment");
+const overlay = document.querySelector(".overlay");
+const productSection = document.querySelector(".product");
+
+productSection.addEventListener("click", (event) => {
+  if (event.target.classList.contains("paymentBtn")) {
+    paymentBox.classList.add("show");
+    overlay.classList.add("show");
+    productSection.style.clipPath = "none";
+    document.body.classList.add("no-scroll");
+
+  } else if (event.target.classList.contains("fa-xmark")) {
+    paymentBox.classList.remove("show");
+    overlay.classList.remove("show");
+    productSection.style.clipPath =
+      "polygon(0 15%, 100% 0%, 100% 100%, 0% 100%)";
+    document.body.classList.remove("no-scroll");
+  }
+});
 
 // Global Functions
 
