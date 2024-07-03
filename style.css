@@ -26,8 +26,8 @@ html {
 }
 
 ::selection {
-  background-color: #cecece; /* Orange background */
-  color: black; /* White text color */
+  background-color: white; 
+  color: black;
 }
 
 ul {
@@ -335,7 +335,7 @@ nav .navBottom h3:hover {
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.product img {
+.product > img {
   width: 40%;
   animation: product-up-down 2s ease-in-out infinite;
 }
@@ -440,6 +440,119 @@ nav .navBottom h3:hover {
   color: black;
   border-color: black;
   animation: none;
+}
+
+.product .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.product .payment {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ececec;
+  box-shadow: 0 0 15px #ccc;
+  padding: 20px 50px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: none;
+}
+
+.product .payment i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  padding: 8px 16px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.product .payment i:hover {
+  background-color: rgb(240, 0, 0);
+}
+
+.product .payment h1 {
+  color: black;
+  font-size: 30px;
+}
+
+.product .payment .personalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product .payment .personalInfo label {
+  color: #222;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.product .payment input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #555;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: var(--main-transition);
+}
+
+.product .payment input::placeholder {
+  color: #ccc;
+}
+
+.product .payment input:hover,
+.product .payment input:focus {
+  background-color: #666;
+}
+
+.product .payment img {
+  width: 70px;
+  margin: -15px 0 10px;
+}
+
+.product .payment .cardNum {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.product .payment .cardInfos {
+  display: flex;
+  gap: 5px;
+}
+
+.product .payment .checkout {
+  display: block;
+  background-color: var(--main-color);
+  margin: 10px 0 -5px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #ececec;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--main-transition);
+  user-select: none;
+}
+
+.product .payment .checkout:hover {
+  background-color: var(--hover-color);
 }
 
 /* End Product */
