@@ -564,5 +564,35 @@ nav .navBottom h3:hover {
 .product .payment .checkout:hover {
   background-color: var(--hover-color);
 }
-
 /* End Product */
+
+/* Start Gallery */
+.gallery {
+  padding-top: 80px;
+}
+
+.gallery .container {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+.gallery h2 {
+  margin: 5px;
+  font-weight: 800;
+  font-size: 25px;
+  max-width: 300px;
+}
+
+.gallery img {
+  width: 250px;
+}
+
+@media (max-width: 676px) {
+  .gallery .container {
+    text-align: center;
+  }
+}
+/* End Gallery */
