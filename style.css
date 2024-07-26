@@ -590,12 +590,6 @@ nav .navBottom h3:hover {
 .gallery img {
   width: 250px;
 }
-
-@media (max-width: 676px) {
-  .gallery .container {
-    text-align: center;
-  }
-}
 /* End Gallery */
 
 /* Start Nes Season */
@@ -741,23 +735,18 @@ footer .footerRight .copyright {
     padding: 0 50px;
     color: white;
   }
-  
   nav .navTop {
     height: 65px;
   }
-
   nav .navTop img {
     width: 120px;
   }
-  
   nav .navTop .search {
     display: none;
   }
-  
   nav .navTop .limitedOffer {
     font-size: 18px;
   }
-  
   nav .navBottom {
     height: 100px;
     padding-bottom: 20px;
@@ -767,9 +756,168 @@ footer .footerRight .copyright {
     flex-wrap: wrap;
     gap: 15px;
   }
-  
   nav .navBottom h3 {
     font-size: 17px;
+  }
+
+  .slider {
+    clip-path: none;
+  }
+  .slider .sliderWrapper .sliderItem img {
+    width: 350px;
+    z-index: 1;
+  }
+  .slider .sliderWrapper .sliderItem h1 {
+    display: none;
+  }
+  .slider .sliderWrapper .sliderItem h2 {
+    padding: 5px 30px;
+    font-size: 50px;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  .slider .sliderWrapper .sliderItem:nth-child(1) h2, 
+  .slider .sliderWrapper .sliderItem:nth-child(2) h2, 
+  .slider .sliderWrapper .sliderItem:nth-child(3) h2, 
+  .slider .sliderWrapper .sliderItem:nth-child(4) h2, 
+  .slider .sliderWrapper .sliderItem:nth-child(5) h2 {
+    color: white;
+  }
+  .slider .sliderWrapper .sliderItem button {
+    top: 5%;
+    right: 0;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 16px;
+  }
+  .slider .sliderWrapper .sliderItem .sliderBg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery .container {
+    text-align: center;
+  }
+
+  .product {
+    height: 130vh;
+    padding: 80px 40px;
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product > img {
+    width: 100%;
+  }
+  .product .productInfo {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    right:0%;
+    width: 100%;
+    padding: 0;
+  }
+  .product .productInfo h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .product .productInfo h2 {
+    margin-bottom: 25px;
+  }
+  .product .productInfo p {
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  .product .productInfo .colors,
+    .product .productInfo .sizes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .product .productInfo button {
+    float:  none;
+    margin-top: 10px;
+  }
+  .product .payment {
+    width: 95%;
+    padding: 10px 30px;
+  }
+  .product .payment h1 {
+    color: black;
+    font-size: 24px;
+  }
+  .product .payment .personalInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .product .payment .personalInfo label {
+    color: #222;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: -5px;
+  }
+  .product .payment input {
+    padding: 7px;
+    font-size: 16px;
+  }
+  .product .payment .cardNum {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .product .payment .cardInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .product .payment .checkout {
+    margin-bottom: 10px;
+  }
+
+  .newSeason {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  .newSeason .item:nth-child(2) {
+    padding: 0px;
+  }
+  .newSeason .item:nth-child(1),
+  .newSeason .item:nth-child(3) {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footerLeft {
+    width: 125%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footerRight {
+    background-color: #ececec;
+    width: 135%;
+    text-align: center;
+  }
+  .footerRight .leftMenu .mail {
+    justify-content: center;
+  }
+  .footerRight .rightMenu .icons {
+    justify-content: center;
   }
 }
 /* End Responsive Media */
