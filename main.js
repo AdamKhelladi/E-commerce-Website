@@ -166,7 +166,7 @@ function changingSize() {
   });
 }
 
-// Payment Box
+// Payment Box 
 
 const paymentBox = document.querySelector(".payment");
 const overlay = document.querySelector(".overlay");
