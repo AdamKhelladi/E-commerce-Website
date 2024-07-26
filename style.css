@@ -1,6 +1,7 @@
 /* Start Global R.linkses  */
 body {
   font-family: "Lato", sans-serif;
+  background-color: #fafafa;
 }
 body.no-scroll {
   overflow: hidden;
@@ -643,4 +644,92 @@ nav .navBottom h3:hover {
   font-weight: 800;
   cursor: pointer;
 }
-/* EMd Nes Season */
+/* End New Season */
+
+/* Start Footer */
+footer {
+  padding: 60px 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+footer .footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footerLeft .title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+footer .footerLeft ul li {
+  margin-bottom: 5px;
+  font-style: 16px;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+footer .footerLeft ul li:hover {
+  color: var(--hover-color);
+}
+
+footer .footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .footerRight .leftMenu .title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+footer .footerRight .leftMenu .mail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .footerRight .leftMenu .mail input {
+  padding: 5px;
+  outline: none;
+}
+
+footer .footerRight .leftMenu .mail button {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+footer .footerRight .rightMenu .title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+footer .footerRight .rightMenu .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footerRight .rightMenu .icons img {
+  width: 25px;
+  cursor: pointer;
+}
+
+footer .footerRight .copyright { 
+  font-weight: 400;
+  font-size: 16px;
+  color: #444;
+}
+/* End Footer */
