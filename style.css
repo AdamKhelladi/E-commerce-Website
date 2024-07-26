@@ -733,3 +733,43 @@ footer .footerRight .copyright {
   color: #444;
 }
 /* End Footer */
+
+/* Start Responsive Media */
+@media (max-width: 667px) {
+  nav {
+    background-color: #111;
+    padding: 0 50px;
+    color: white;
+  }
+  
+  nav .navTop {
+    height: 65px;
+  }
+
+  nav .navTop img {
+    width: 120px;
+  }
+  
+  nav .navTop .search {
+    display: none;
+  }
+  
+  nav .navTop .limitedOffer {
+    font-size: 18px;
+  }
+  
+  nav .navBottom {
+    height: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  nav .navBottom h3 {
+    font-size: 17px;
+  }
+}
+/* End Responsive Media */
