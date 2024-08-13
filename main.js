@@ -31,7 +31,7 @@ function buyNowBtn() {
   });
 }
 
-// Product
+// Products
 
 const products = [
   {
