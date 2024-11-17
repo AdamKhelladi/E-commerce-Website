@@ -1,5 +1,4 @@
 // Slider
-
 const headerItems = document.querySelectorAll(".navBottom h3");
 const wrapper = document.querySelector(".sliderWrapper");
 
@@ -32,7 +31,6 @@ function buyNowBtn() {
 }
 
 // Products
-
 const products = [
   {
     id: 1,
@@ -167,7 +165,6 @@ function changingSize() {
 }
 
 // Payment Box Logic
-
 const paymentBox = document.querySelector(".payment");
 const overlay = document.querySelector(".overlay");
 const productSection = document.querySelector(".product");
@@ -187,7 +184,6 @@ productSection.addEventListener("click", (event) => {
 });
 
 // Global Functions
-
 function addActiveClass(element) {
   element.classList.add("active");
 }
