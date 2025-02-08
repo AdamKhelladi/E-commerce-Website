@@ -32,6 +32,7 @@ function buyNowBtn() {
 }
 
 // Products
+
 const products = [
   {
     id: 1,
