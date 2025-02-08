@@ -1,4 +1,5 @@
 // Slider
+
 const headerItems = document.querySelectorAll(".navBottom h3");
 const wrapper = document.querySelector(".sliderWrapper");
 
