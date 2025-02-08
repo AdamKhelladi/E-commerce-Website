@@ -183,7 +183,7 @@ productSection.addEventListener("click", (event) => {
   }
 });
 
-// Global Functions
+// Global Functions 
 function addActiveClass(element) {
   element.classList.add("active");
 }
@@ -192,3 +192,10 @@ function removeActiveClasses(elements) {
     element.classList.remove("active");
   });
 }
+
+
+
+
+
+
+
