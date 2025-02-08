@@ -1,5 +1,4 @@
 // Slider
-
 const headerItems = document.querySelectorAll(".navBottom h3");
 const wrapper = document.querySelector(".sliderWrapper");
 
@@ -32,7 +31,6 @@ function buyNowBtn() {
 }
 
 // Products
-
 const products = [
   {
     id: 1,
@@ -194,6 +192,8 @@ function removeActiveClasses(elements) {
     element.classList.remove("active");
   });
 }
+
+
 
 
 
