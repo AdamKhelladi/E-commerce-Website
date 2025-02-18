@@ -4,7 +4,7 @@
 
 - Html, Html5
 - Css, Css3
-- JavaScript + ES6 + DOM + BOM  
+- JavaScript + ES6 + DOM + BOM
 - jQuery
 
 =================
